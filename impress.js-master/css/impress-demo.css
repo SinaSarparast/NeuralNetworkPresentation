@@ -736,3 +736,39 @@ body.impress-mouse-timeout {
     width: 100%;
     height: 400px;
 }
+
+#MimickingANeuronsFunction{
+    width: 800px;
+}
+
+#InputLayer, #OutputLayer, #HiddenLayer, #ActivationFunctions {
+    width: 700px;
+    height: 500px;
+}
+
+#MultiLayerPerceptron img {
+    width: 600px;
+    height: 400px;
+}
+
+#title div{
+    font-size: 18px;
+}
+
+#History1, #History1 {
+    text-align: justify;
+}
+
+ul {
+    font-size: 32px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 32px;
+}

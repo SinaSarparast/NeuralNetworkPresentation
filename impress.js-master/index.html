@@ -24,21 +24,46 @@
 
 <div id="impress" data-autoplay="7">
 
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" >
         <h1>Neural Networks</h1>
+        <div>Sina Sarparast {ss4g17@soton.ac.uk}istory </div>
+        <div>Chun Hei Fok {chf1n17@soton.ac.uk}</div>
     </div>
 
-    <div id="bored" class="step slide" data-x="-700" data-y="-1500" data-autoplay="0" >
-        <q>
-        	<h1><b>History</b></h1>
-        </q>	
-        	<p>Warren McCulloch and Walter Pitts (1943) created a computational model for neural networks based on mathematics and algorithms called threshold logic.</p>
+    <div id="History1" class="step slide" data-x="-1700" data-y="-1500" data-autoplay="0" >
+        	<h1>History</h1>
+        	<br>	
+        	<p>
+        	<b>In 1943</b>, McCulloch and Pitts wrote a paper on how neurons might work. They modeled a simple neural network using electrical circuits.</p>
+        	<br>
+        	<p>
+        		<b>In 1949</b>, Hebb wrote <i>"The Organization of Behavior"</i>, a work which pointed out the fact that neural pathways are strengthened each time they are used, a concept fundamentally essential to the ways, in which human learn.
+        	</p>
         
         
     </div>
 
-    <div class="step slide" data-x="300" data-y="-1500">
-        <q><h1>What is a neural network?</h1></q>
+    <div id="History2" class="step slide" data-x="-700" data-y="-1500" data-autoplay="0" >
+        	<h1>History</h1>
+        	<br>	
+        	<p>
+        		<b>In 1949s</b>, a paper was written that suggested there could not be an extension from the single layered neural network to a multiple layered neural network. 
+        		<!-- In addition, many people in the field were using a learning function that was fundamentally flawed because it was not differentiable across the entire line. As a result, research and funding went drastically down. -->
+        	</p>
+        	<br>
+        	<p>
+        		<b>In 1982</b>, interest in the field was renewed. Hopfield used bidirectional lines. Previously, the connections between neurons was only one way.
+        	</p>
+        	<br>
+        	<p>
+        		<b>In 1986</b>, Rumelhart came up with back propagation networks. 
+        	</p>
+        
+        
+    </div>
+
+    <div id="WhatIsANeuralNetwork?" class="step slide" data-x="300" data-y="-1500">
+        <h1>What is a neural network?</h1>
         	<br>
         	<ul>
         		<li>Neurons and connections between them just like human brain</li>
@@ -48,31 +73,26 @@
         	</ul>
     </div>
 
-    <div class="step" data-x="1300" data-y="-1500">
-        <q><h1>A Neuron is …</h1></q>
+    <div id="ANeuronIs" class="step slide" data-x="1300" data-y="-1500">
+        <h1>A Neuron is …</h1>
+        <br>
         	<img src="neuron.png" alt="" class="image" >
     </div>
 
-
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-    	<q><h1>What is an Artificial Neural Network?</h1></q>
-        <img src="ANeuron.png" alt="">
-    </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <q><h1>Mimicking a neuron’s function</h1></q>
+    <div id="MimickingANeuronsFunction" class="step" data-x="00" data-y="2400" data-scale="4">
+        <h1>Mimicking a neuron’s function</h1></q>
         <img class="image" src="ArtificialNeuron.png" alt="">
     </div>
 
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <q><h1>Multi Layer Perceptron</h1></q>
+    <div id="MultiLayerPerceptron" class="step" data-x="3700" data-y="2500" data-rotate="-90" data-scale="5">
+        <h1>Multi Layer Perceptron</h1>
         <img class="image" src="MLP.png" alt="">
     </div>
 
 
-    <div id="slide" class="step" data-x="3000" data-y="-850" data-z="0" data-rotate="270" data-scale="2">
+    <div id="SomeFeaturesOfMLP" class="step" data-x="3000" data-y="-850" data-rotate="270" data-scale="2">
         <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
-        <q><b><h1>Some Features of MLP</h1></b></q>
+        <h1>Some Features of MLP</h1>
         <p>
         	<ul>
 	        	<li>MLPs consist of three or more layers of nodes</li>
@@ -82,52 +102,56 @@
         </p>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <q><h1>Input Layer</h1></q>
+    <div id="InputLayer" class="step" data-x="7000" data-y="-500" data-scale="6">
+        <h1>Input Layer</h1>
         <p>Input layer simply emits input Zi</p>
     </div>
 
-    <div id="source" class="step" data-x="7000" data-y="2000" data-rotate="20" data-scale="4">
-        <q><h1>Output Layer</h1></q>
-        <p>Has specific number of neurons. Ex: 10 if we have can have 10 different results</p>
+    <div id="OutputLayer" class="step" data-x="7000" data-y="600" data-scale="6">
+        <h1>Output Layer</h1>
+        <p>Has specific number of neurons.<br>
+        Ex: 10 if we have can have 10 different outputs</p>
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-    	<q><h1>Hidden Layers</h1></q>
+    <div id="HiddenLayers" class="step" data-x="7200" data-y="-650" data-z="700" data-rotate-x="90" data-scale="6">
+    	<h1>Hidden Layers</h1>
         <p>each neuron in the hidden layer uses a non-linear activation function</p>
     </div>
 
-    <div id="its-in-3d" class="step" data-x="6200" data-y="5500" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <q><h1>Activation Functions </h1></q>
+    <div id="ActivationFunctions" class="step" data-x="7000" data-y="1800" data-rotate-y="-40" data-scale="4">
+        <h1>Activation Functions</h1>
         <ul>
         	<li>The activation function in a neural network is a function used to transform the activation level of a unit (neuron) into an output signal.</li>
         	<li>The activation function essentially divides the original space into typically two partitions, having a "squashing" effect. </li>
         </ul>
     </div>
 
-    <div id="Feedforward-Neural-Network" class="step" data-x="4000" data-y="-850" data-z="0" data-rotate="270" data-scale="2">
-		<q><h1><b>Feedforward Neural Network</b></h1></q>
+    <div id="Feedforward-Neural-Network" class="step" data-x="4000" data-y="-850"  data-rotate="270" data-scale="2">
+		<h1>Feedforward Neural Network</h1>
 		<p>A feedforward neural network is an artificial neural network wherein connections between the units do not form a cycle.</p>
     </div>
 
     <div id="Recurrent-neural-network" class="step" data-x="4000" data-y="1000" data-z="-4000" data-scale="1">
-		<q><h1><b>Recurrent Neural Network</b></h1></q>
+		<h1>Recurrent Neural Network</h1>
 		<p>A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed cycle. This allows it to exhibit dynamic temporal behavior.</p>
     </div>
 
-    <div id="Backpropagation" class="step" data-x="0" data-y="1000" data-z="-4000" data-rotate-y="90" data-scale="1">
-		<q><h1><b>Backpropagation</b></h1></q>
+    <div id="Backpropagation1" class="step" data-x="-1000" data-y="5000" data-scale="4" data-rotate-y="40">
+		<h1>Backpropagation</h1>
 		<p>Backpropagation is a method used in artificial neural networks to calculate the error contribution of each neuron after a batch of data (in image recognition, multiple images) is processed</p>
     </div>
 
-    <div id="something" class="step" data-x="0" data-y="1000" data-z="-5000" data-rotate-y="90" data-scale="1">
-		<q><h1><b>something</b></h1></q>
-		<p>Backpropagation is a method used in artificial neural networks to calculate the error contribution of each neuron after a batch of data (in image recognition, multiple images) is processed</p>
+    <div id="Backpropagation2" class="step" data-x="0" data-y="1000" data-z="-5000" data-rotate-y="90" data-scale="1">
+		<h1>Backpropagation</h1>
+		<p>Hybrid networks used just two layers, these back-propagation networks use many. The result is that back-propagation networks are "slow learners," needing possibly thousands of iterations to learn.</p>
     </div>
 
-    <div id="Resources" class="step" data-x="0" data-y="10000" data-z="-5000" data-rotate-x="90" data-scale="1">
-		<q><h1><b>Resources</b></h1>
-		https://secure.ecs.soton.ac.uk/notes/comp6229/l7_neuralnetworks.pdf
+    <div id="Resources" class="step" data-x="8000" data-y="5000" data-rotate-y="-20" data-scale="3">
+		<h1>Resources</h1>
+		<ul>
+			<li>https://secure.ecs.soton.ac.uk/notes/comp6229/l7_neuralnetworks.pdf</li>
+			<li>https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html</li>
+		</ul>
     </div>
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
