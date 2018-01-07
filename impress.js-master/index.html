@@ -87,6 +87,11 @@
     <div id="MultiLayerPerceptron" class="step" data-x="3700" data-y="2500" data-rotate="-90" data-scale="5">
         <h1>Multi Layer Perceptron</h1>
         <img class="image" src="MLP.png" alt="">
+        <!-- The little league team you coach just won the big game, and you ask them if they want to go out for pizza or for burgers. Each kid starts screaming their preference, and you go with whatever was the loudest.
+        This is basically how a neural net works but on multiple levels. The top-level nodes get some input, each detects a certain property and screams when it sees it...the more intense the property, the louder they scream.
+        Now you have a bunch of nodes screaming "it's dark!", "it's has red!", "it's roundish!" as various volumes. The next level listens and based on what they hear they start screaming about more complex features. "It has a face!", "It has fur", until finally get to a level where it is screaming "It's a kitty!".
+        The magic part is no one tells them when to scream, it is based on feedback. Your little league team went for burgers, and some of them got sick. Next week, they might not scream for burgers, or might not scream as loudly. They have collectively learned that burgers might not have been a great choice, and are more likely to lean away from the option.
+        A neural net gets training in much the same way. You feed it a bunch of kitty and non-kitty pictures. If the net gets it right, the nodes are reinforced so they are more likely to do the same thing in similar situations. If it is wrong, they get disincentivized. Initially, its results will be near random, but if you have designed it correctly, it will get better and better as the nodes adjust. You often have neural nets that work without any human understanding exactly how. -->
     </div>
 
 
@@ -151,10 +156,23 @@
 		<ul>
 			<li>https://secure.ecs.soton.ac.uk/notes/comp6229/l7_neuralnetworks.pdf</li>
 			<li>https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html</li>
+            <li>https://www.reddit.com/r/explainlikeimfive/comments/7buzbs/eli5_what_are_neural_networks_specifically_rnns/</li>
 		</ul>
     </div>
 
+ 	<div id="Demo1" class="step" data-z="-8000" data-y="5000" data-rotate-y="90" data-scale="3">
+        <h1>Neural Network Demo - XOR Gate</h1><br>
+        <img src="XOR.png" >
+    </div>	
+
+    <div id="Demo2" class="step" data-z="-11000" data-y="5000" data-rotate-y="90" data-scale="3">
+        <h1>Neural Network Demo - XOR Gate</h1><br>
+        <canvas id="myChart" width="400" height="150"></canvas>
+        <canvas id="raw" width="400" height="150"></canvas>
+    </div>
+
     <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+        
     </div>
 
 </div>
@@ -170,7 +188,117 @@ if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
 }
 </script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
 
+<script src="js/test.js"></script>
+<script type="text/javascript">
+
+    window.onload = function(){
+        var perf = script();
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var raw = document.getElementById("raw").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: perf.labels,
+                datasets: [{
+                    lineTension: 0,
+                    label: '# performance',
+                    data: perf.data,
+                    fill: false,
+                    borderColor: "#c45850",
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Neural Network Percentage Perforamce"
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: '% Performance'
+                        }                       
+                    }],
+                    xAxes: [{
+                        ticks : {
+                            max : 30,    
+                            min : 0
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Iteration'
+                        }
+                    }]
+                }
+            }});
+        var raw = new Chart(raw, {
+            type: 'line',
+            data: {
+                labels: perf.labels,
+                datasets: [
+                    {
+                        lineTension: 0,
+                        label: '# [0 0]',
+                        data: perf.raw.a,
+                        fill: false,
+                        borderColor: "#3e95cd",
+                    },{
+                        lineTension: 0,
+                        label: '# [0 1]',
+                        data: perf.raw.b,
+                        fill: false,
+                        borderColor: "#8e5ea2",
+                    },{
+                        lineTension: 0,
+                        label: '# [1 0]',
+                        data: perf.raw.c,
+                        fill: false,
+                        borderColor: "#3cba9f",
+                    },{
+                        lineTension: 0,
+                        label: '# [1 1]',
+                        data: perf.raw.d,
+                        fill: false,
+                        borderColor: "#e8c3b9",
+                    }
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Neural Network Raw Perforamce"
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Raw Output'
+                        }
+                    }],
+                    xAxes: [{
+                        ticks : {
+                            max : 30,    
+                            min : 0
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Iteration'
+                        }                       
+                    }]
+                }
+            }
+        });
+    }
+    </script>
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
 
