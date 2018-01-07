@@ -10,15 +10,104 @@
 
 <body>
 	<div>
-	    <p><b>NN Demo</b></p>
+	    <p><b>Neural Network Demo - XOR Gate</b></p>
+	    <img src="http://www.learningelectronics.net/images/04116.png">
+	    <canvas id="myChart" width="400" height="150"></canvas>
+	    <canvas id="raw" width="400" height="150"></canvas>
 	</div>
-
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+	
 	<script src="js/test.js"></script>
 	<script type="text/javascript">
+
 	window.onload = function(){
-		script();
+		var perf = script();
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var raw = document.getElementById("raw").getContext('2d');
+		var myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		        labels: perf.labels,
+		        datasets: [{
+		        	lineTension: 0,
+		            label: '# performance',
+		            data: perf.data,
+		    		fill: false,
+		    		borderColor: "#c45850",
+		        }]
+		    },
+		    options: {
+		    	title: {
+		    		display: true,
+		    		text: "Neural Network Percentage Perforamce"
+		    	},
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero:true
+		                }
+		            }],
+		            xAxes: [{
+	                    ticks : {
+	                        max : 30,    
+	                        min : 0
+	                    }
+		            }]
+		        }
+		    }});
+		var raw = new Chart(raw, {
+		    type: 'line',
+		    data: {
+		        labels: perf.labels,
+		        datasets: [
+			        {
+			        	lineTension: 0,
+			            label: '# [0 0]',
+			            data: perf.raw.a,
+			    		fill: false,
+			    		borderColor: "#3e95cd",
+			        },{
+			        	lineTension: 0,
+			            label: '# [0 1]',
+			            data: perf.raw.b,
+			    		fill: false,
+			    		borderColor: "#8e5ea2",
+			        },{
+			        	lineTension: 0,
+			            label: '# [1 0]',
+			            data: perf.raw.c,
+			    		fill: false,
+			    		borderColor: "#3cba9f",
+			        },{
+			        	lineTension: 0,
+			            label: '# [1 1]',
+			            data: perf.raw.d,
+			    		fill: false,
+			    		borderColor: "#e8c3b9",
+			        }
+		        ]
+		    },
+		    options: {
+		    	title: {
+		    		display: true,
+		    		text: "Neural Network Raw Perforamce"
+		    	},
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero:true
+		                }
+		            }],
+		            xAxes: [{
+	                    ticks : {
+	                        max : 30,    
+	                        min : 0
+	                    }
+		            }]
+		        }
+		    }
+		});
 	}
 	</script>
 </body>
