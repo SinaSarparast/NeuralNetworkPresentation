@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
@@ -10,177 +11,172 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <link href="css/impress-demo.css" rel="stylesheet" />
-    
+
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <body class="impress-not-supported">
 
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
-
-<div id="impress" data-autoplay="7">
-
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" >
-        <h1>Neural Networks</h1>
-        <div>Sina Sarparast {ss4g17@soton.ac.uk} </div>
-        <div>Chun Hei Fok {chf1n17@soton.ac.uk}</div>
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
 
-    <div id="History1" class="step slide" data-x="-1700" data-y="-1500" data-autoplay="0" >
-        	<h1>History</h1>
-        	<br>	
-        	<p>
-        	<b>In 1943</b>, McCulloch and Pitts wrote a paper on how neurons might work. They modeled a simple neural network using electrical circuits.</p>
-        	<br>
-        	<p>
-        		<b>In 1949</b>, Hebb wrote <i>"The Organization of Behavior"</i>, a work which pointed out the fact that neural pathways are strengthened each time they are used, a concept fundamentally essential to the ways, in which human learn.
-        	</p>
+    <div id="impress" data-autoplay="7">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+            <h1>Neural Networks</h1>
+            <div>Sina Sarparast {ss4g17@soton.ac.uk} </div>
+            <div>Chun Hei Fok {chf1n17@soton.ac.uk}</div>
+        </div>
         
-        
-    </div>
+        <div id="WhatIsANeuralNetwork?" class="step slide" data-x="-1700" data-y="-1500">
+            <h1>What is a neural network?</h1>
+            <br>
+            <ul>
+                <li>Neurons and connections between them just like human brain</li>
+                <br>
+                <li>There is Billions of nerve cells (neurons) and trillions of interconnections in the human brain </li>
+                <br>
+                <li>Simplest brain belongs to C elegan worms with only 302 neurons in their brain!</li>
+            </ul>
+        </div>
 
-    <div id="History2" class="step slide" data-x="-700" data-y="-1500" data-autoplay="0" >
-        	<h1>History</h1>
-        	<br>	
-        	<p>
-        		<b>In 1949s</b>, a paper was written that suggested there could not be an extension from the single layered neural network to a multiple layered neural network. 
-        		<!-- In addition, many people in the field were using a learning function that was fundamentally flawed because it was not differentiable across the entire line. As a result, research and funding went drastically down. -->
-        	</p>
-        	<br>
-        	<p>
-        		<b>In 1982</b>, interest in the field was renewed. Hopfield used bidirectional lines. Previously, the connections between neurons was only one way.
-        	</p>
-        	<br>
-        	<p>
-        		<b>In 1986</b>, Rumelhart came up with back propagation networks. 
-        	</p>
-        
-        
-    </div>
+        <div id="ANeuronIs" class="step slide" data-x="-700" data-y="-1500">
+            <h1>A Neuron is …</h1>
+            <br>
+            <img src="neuron.png" alt="" class="image">
+        </div>
 
-    <div id="WhatIsANeuralNetwork?" class="step slide" data-x="300" data-y="-1500">
-        <h1>What is a neural network?</h1>
-        	<br>
-        	<ul>
-        		<li>Neurons and connections between them just like human brain</li>
-        		<br>
-        		<li>There is Billions of nerve cells (neurons)
-        		 and trillions of interconnections in the human brain </li>
-        		 <li>simplest brain belongs to C elegan worms with only 302 neurons in their brain!</li>
-        	</ul>
-    </div>
+        <div id="History1" class="step slide" data-x="300" data-y="-1500" data-autoplay="0">
+            <h1>History</h1>
+            <br>
+            <p>
+                <b>In 1943</b>, McCulloch and Pitts wrote a paper on how neurons might work. They modeled a simple neural network using electrical circuits.</p>
+            <br>
+            <p>
+                <b>In 1949</b>, Hebb wrote <i>"The Organization of Behavior"</i>, a work which pointed out the fact that neural pathways are strengthened each time they are used, a concept fundamentally essential to the ways, in which human learn.
+            </p>
+        </div>
 
-    <div id="ANeuronIs" class="step slide" data-x="1300" data-y="-1500">
-        <h1>A Neuron is …</h1>
-        <br>
-        	<img src="neuron.png" alt="" class="image" >
-    </div>
+        <div id="History2" class="step slide" data-x="1300" data-y="-1500" data-autoplay="0">
+            <h1>History</h1>
+            <br>
+            <p>
+                <b>In the 1940s</b>, a paper was written that suggested there could not be an extension from the single layered neural network to a multiple layered neural network.
+                <!-- In addition, many people in the field were using a learning function that was fundamentally flawed because it was not differentiable across the entire line. As a result, research and funding went drastically down. -->
+            </p>
+            <br>
+            <p>
+                <b>In 1982</b>, interest in the field was renewed. Hopfield used bidirectional lines. Previously, the connections between neurons was only one way.
+            </p>
+            <br>
+            <p>
+                <b>In 1986</b>, Rumelhart came up with back propagation networks.
+            </p>
 
-    <div id="MimickingANeuronsFunction" class="step" data-x="00" data-y="2400" data-scale="4">
-        <h1>Mimicking a neuron’s function</h1></q>
-        <img class="image" src="ArtificialNeuron.png" alt="">
-    </div>
 
-    <div id="MultiLayerPerceptron" class="step" data-x="3700" data-y="2500" data-rotate="-90" data-scale="5">
-        <h1>Multi Layer Perceptron</h1>
-        <img class="image" src="MLP.png" alt="">
-        <!-- The little league team you coach just won the big game, and you ask them if they want to go out for pizza or for burgers. Each kid starts screaming their preference, and you go with whatever was the loudest.
+        </div>
+
+        <div id="MimickingANeuronsFunction" class="step" data-x="00" data-y="2400" data-scale="4">
+            <h1>Mimicking a neuron’s function</h1>
+
+            <img class="image" src="ArtificialNeuron.png" alt="">
+        </div>
+
+        <div id="MultiLayerPerceptron" class="step" data-x="3300" data-y="2500" data-rotate="-90" data-scale="5">
+            <h1>Multi Layer Perceptron</h1>
+            <img class="image" src="MLP.png" alt="">
+            <!-- The little league team you coach just won the big game, and you ask them if they want to go out for pizza or for burgers. Each kid starts screaming their preference, and you go with whatever was the loudest.
         This is basically how a neural net works but on multiple levels. The top-level nodes get some input, each detects a certain property and screams when it sees it...the more intense the property, the louder they scream.
         Now you have a bunch of nodes screaming "it's dark!", "it's has red!", "it's roundish!" as various volumes. The next level listens and based on what they hear they start screaming about more complex features. "It has a face!", "It has fur", until finally get to a level where it is screaming "It's a kitty!".
         The magic part is no one tells them when to scream, it is based on feedback. Your little league team went for burgers, and some of them got sick. Next week, they might not scream for burgers, or might not scream as loudly. They have collectively learned that burgers might not have been a great choice, and are more likely to lean away from the option.
         A neural net gets training in much the same way. You feed it a bunch of kitty and non-kitty pictures. If the net gets it right, the nodes are reinforced so they are more likely to do the same thing in similar situations. If it is wrong, they get disincentivized. Initially, its results will be near random, but if you have designed it correctly, it will get better and better as the nodes adjust. You often have neural nets that work without any human understanding exactly how. -->
-    </div>
+        </div>
 
 
-    <div id="SomeFeaturesOfMLP" class="step" data-x="3000" data-y="-850" data-rotate="270" data-scale="2">
-        <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
-        <h1>Some Features of MLP</h1>
-        <p>
-        	<ul>
-	        	<li>MLPs consist of three or more layers of nodes</li>
-	        	<li>MLPs are fully connected</li>
-				<li>MLP is a class of feedforward artificial neural networks (ANNs)</li>
-        	</ul>
-        </p>
-    </div>
+        <div id="SomeFeaturesOfMLP" class="step" data-x="3000" data-y="-850" data-rotate="270" data-scale="2">
+            <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
+            <h1>Some Features of MLP</h1>
+            <p>
+                <ul>
+                    <li>MLPs consist of three or more layers of nodes</li>
+                    <li>MLPs are fully connected</li>
+                    <li>MLP is a class of feedforward artificial neural networks (ANNs)</li>
+                </ul>
+            </p>
+        </div>
 
-    <div id="Feedforward-Neural-Network" class="step" data-x="4000" data-y="-850"  data-rotate="270" data-scale="2">
-		<h1>Feedforward Neural Network</h1>
-		<p>A feedforward neural network is an artificial neural network wherein connections between the units do not form a cycle.</p>
-    </div>
+        <div id="Feedforward-Neural-Network" class="step" data-x="4000" data-y="-850" data-rotate="270" data-scale="2">
+            <h1>Feedforward Neural Network</h1>
+            <p>A feedforward neural network is an artificial neural network wherein connections between the units do not form a cycle.</p>
+        </div>
 
-    <div id="Recurrent-neural-network" class="step" data-x="4000" data-y="1000" data-z="-4000" data-scale="1">
-		<h1>Recurrent Neural Network</h1>
-		<p>A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed cycle. This allows it to exhibit dynamic temporal behavior.</p>
-    </div>
+        <div id="Recurrent-neural-network" class="step" data-x="4000" data-y="1000" data-z="-4000" data-scale="1">
+            <h1>Recurrent Neural Network</h1>
+            <p>A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed cycle. This allows it to exhibit dynamic temporal behavior.</p>
+        </div>
 
-    <div id="InputLayer" class="step" data-x="7000" data-y="-500" data-scale="6">
-        <h1>Input Layer</h1>
-        <p>Input layer simply emits input Zi</p>
-    </div>
+        <div id="InputLayer" class="step" data-x="7000" data-y="-1500" data-scale="6">
+            <h1>Input Layer</h1>
+            <p>Input layer simply feeds input to hidden layers.</p>
+        </div>
 
-    <div id="OutputLayer" class="step" data-x="7000" data-y="600" data-scale="6">
-        <h1>Output Layer</h1>
-        <p>Has specific number of neurons.<br>
-        Ex: 10 if we have can have 10 different outputs</p>
-    </div>
+        <div id="OutputLayer" class="step" data-x="7000" data-y="200" data-scale="6">
+            <h1>Output Layer</h1>
+            <p>Has specific number of neurons.<br> Example: 10 if we have can have 10 different outputs</p>
+        </div>
 
-    <div id="HiddenLayers" class="step" data-x="7200" data-y="-650" data-z="700" data-rotate-x="90" data-scale="6">
-    	<h1>Hidden Layers</h1>
-        <p>each neuron in the hidden layer uses a non-linear activation function</p>
-    </div>
+        <div id="HiddenLayers" class="step" data-x="7200" data-y="-650" data-z="700" data-rotate-x="90" data-scale="6">
+            <h1>Hidden Layers</h1>
+            <p>Each neuron in the hidden layer uses a non-linear activation function</p>
+        </div>
 
-    <div id="ActivationFunctions" class="step" data-x="7000" data-y="1800" data-rotate-y="-40" data-scale="4">
-        <h1>Activation Functions</h1>
-        <ul>
-        	<li>The activation function in a neural network is a function used to transform the activation level of a unit (neuron) into an output signal.</li>
-        	<li>The activation function essentially divides the original space into typically two partitions, having a "squashing" effect. </li>
-        </ul>
-    </div>
+        <div id="ActivationFunctions" class="step" data-x="6000" data-y="1800" data-rotate-y="-40" data-scale="4">
+            <h1>Activation Functions</h1>
+            <p>The activation function in a neural network is a function used to transform the activation level of a unit (neuron) into an output signal.</p>
+        </div>
 
-    <div id="Backpropagation1" class="step" data-x="-800" data-y="4000" data-scale="4" data-rotate-y="40">
-		<h1>Backpropagation</h1>
-		<p>Backpropagation is a method used in artificial neural networks to calculate the error contribution of each neuron after a batch of data (in image recognition, multiple images) is processed</p>
-    </div>
+        <div id="Backpropagation1" class="step" data-x="-800" data-y="4000" data-scale="4" data-rotate-y="40">
+            <h1>Backpropagation</h1>
+            <p>Backpropagation is a method used in artificial neural networks to calculate the error contribution of each neuron after a batch of data (in image recognition, multiple images) is processed</p>
+        </div>
 
-    <!-- <div id="Backpropagation2" class="step" data-x="0" data-y="1000" data-z="-5000" data-rotate-y="90" data-scale="1">
+        <!-- <div id="Backpropagation2" class="step" data-x="0" data-y="1000" data-z="-5000" data-rotate-y="90" data-scale="1">
 		<h1>Backpropagation</h1>
 		<p>Hybrid networks used just two layers, these back-propagation networks use many. The result is that back-propagation networks are "slow learners," needing possibly thousands of iterations to learn.</p>
     </div> -->
 
- 	<div id="Demo1" class="step" data-z="-8000" data-y="5000" data-rotate-y="90" data-scale="3">
-        <h1>Neural Network Demo - XOR Gate</h1><br>
-        <img src="XOR.png" >
-    </div>	
+        <div id="Demo1" class="step" data-z="-8000" data-y="5000" data-rotate-y="90" data-scale="3">
+            <h1>Neural Network Demo - XOR Gate</h1><br>
+            <img src="XOR.png">
+        </div>
 
-    <div id="Demo2" class="step" data-z="-11000" data-y="5000" data-rotate-y="90" data-scale="3">
-        <h1>Neural Network Demo - XOR Gate</h1><br>
-        <canvas id="myChart" width="400" height="150"></canvas>
-        <canvas id="raw" width="400" height="150"></canvas>
+        <div id="Demo2" class="step" data-z="-11000" data-y="5000" data-rotate-y="90" data-scale="3">
+            <h1>Neural Network Demo - XOR Gate</h1><br>
+            <canvas id="myChart" width="400" height="150"></canvas>
+            <canvas id="raw" width="400" height="150"></canvas>
+        </div>
+
+        <div id="Resources" class="step" data-x="8000" data-y="5000" data-rotate-y="-20" data-scale="3">
+            <h1>Resources</h1>
+            <ul>
+                <li>https://secure.ecs.soton.ac.uk/notes/comp6229/l7_neuralnetworks.pdf</li>
+                <li>https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html</li>
+                <li>https://www.reddit.com/r/explainlikeimfive/comments/7buzbs/eli5_what_are_neural_networks_specifically_rnns/</li>
+            </ul>
+        </div>
+
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+
+        </div>
+
     </div>
 
-    <div id="Resources" class="step" data-x="8000" data-y="5000" data-rotate-y="-20" data-scale="3">
-		<h1>Resources</h1>
-		<ul>
-			<li>https://secure.ecs.soton.ac.uk/notes/comp6229/l7_neuralnetworks.pdf</li>
-			<li>https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html</li>
-            <li>https://www.reddit.com/r/explainlikeimfive/comments/7buzbs/eli5_what_are_neural_networks_specifically_rnns/</li>
-		</ul>
-    </div>
+    <div id="impress-toolbar"></div>
 
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
-        
-    </div>
-
-</div>
-
-<div id="impress-toolbar"></div>
-
-<!-- <div class="hint">
+    <!-- <div class="hint">
     <p>Use a spacebar or arrow keys to navigate. <br/>
        Press 'P' to launch speaker console.</p>
 </div>
@@ -189,121 +185,122 @@ if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
 }
 </script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
 
-<script src="js/test.js"></script>
-<script type="text/javascript">
-
-    window.onload = function(){
-        var perf = script();
-        var ctx = document.getElementById("myChart").getContext('2d');
-        var raw = document.getElementById("raw").getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: perf.labels,
-                datasets: [{
-                    lineTension: 0,
-                    label: '# performance',
-                    data: perf.data,
-                    fill: false,
-                    borderColor: "#c45850",
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: "Neural Network Percentage Perforamce"
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero:true
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: '% Performance'
-                        }                       
-                    }],
-                    xAxes: [{
-                        ticks : {
-                            max : 30,    
-                            min : 0
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Iteration'
-                        }
+    <script src="js/test.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var perf = script();
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var raw = document.getElementById("raw").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: perf.labels,
+                    datasets: [{
+                        lineTension: 0,
+                        label: '# performance',
+                        data: perf.data,
+                        fill: false,
+                        borderColor: "#c45850",
                     }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Neural Network Percentage Perforamce"
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: '% Performance'
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                max: 30,
+                                min: 0
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Iteration'
+                            }
+                        }]
+                    }
                 }
-            }});
-        var raw = new Chart(raw, {
-            type: 'line',
-            data: {
-                labels: perf.labels,
-                datasets: [
-                    {
+            });
+            var raw = new Chart(raw, {
+                type: 'line',
+                data: {
+                    labels: perf.labels,
+                    datasets: [{
                         lineTension: 0,
                         label: '# [0 0]',
                         data: perf.raw.a,
                         fill: false,
                         borderColor: "#3e95cd",
-                    },{
+                    }, {
                         lineTension: 0,
                         label: '# [0 1]',
                         data: perf.raw.b,
                         fill: false,
                         borderColor: "#8e5ea2",
-                    },{
+                    }, {
                         lineTension: 0,
                         label: '# [1 0]',
                         data: perf.raw.c,
                         fill: false,
                         borderColor: "#3cba9f",
-                    },{
+                    }, {
                         lineTension: 0,
                         label: '# [1 1]',
                         data: perf.raw.d,
                         fill: false,
                         borderColor: "#e8c3b9",
-                    }
-                ]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: "Neural Network Raw Perforamce"
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero:true
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Raw Output'
-                        }
-                    }],
-                    xAxes: [{
-                        ticks : {
-                            max : 30,    
-                            min : 0
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Iteration'
-                        }                       
                     }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Neural Network Raw Perforamce"
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Raw Output'
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                max: 30,
+                                min: 0
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Iteration'
+                            }
+                        }]
+                    }
                 }
-            }
-        });
-    }
+            });
+        }
+
     </script>
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+    <script src="js/impress.js"></script>
+    <script>
+        impress().init();
+
+    </script>
 
 </body>
+
 </html>
-
-
