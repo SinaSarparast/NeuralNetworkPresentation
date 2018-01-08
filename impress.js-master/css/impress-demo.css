@@ -878,7 +878,8 @@ body.impress-mouse-timeout {
 #InputLayer,
 #OutputLayer,
 #HiddenLayer,
-#ActivationFunctions {
+#ActivationFunctions
+#Resources {
     width: 700px;
     height: 500px;
 }
@@ -892,13 +893,20 @@ body.impress-mouse-timeout {
     height: 400px;
 }
 
+#Resources ul{
+    font-size: 18px;
+}
+
 #title div {
     font-size: 18px;
 }
 
-#History1,
-#History1 {
+#History, {
     text-align: justify;
+}
+
+#NeuronsInAction{
+    text-align: center;
 }
 
 #Demo1 {
